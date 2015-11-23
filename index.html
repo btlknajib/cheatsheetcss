@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="animate.min.css" rel="stylesheet">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <title>CSS Cheatsheets</title>
+   <link rel="icon" type="image/png" href="img/favicon.jpg" />
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="logo animated wobble" href="#"> Cheatsheet.co </a>
+        </li>
+        <li>
+          <a href="#item1">Les Sélecteurs</a>
+        </li>
+        <li>
+          <a href="#item2">Les pseudo-classes</a>
+        </li>
+      </ul>
+    </div>
+    <!-- FIN DE #sidebar-wrapper -->
+
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Activer menu</a>
+
+
+            <h1 class="animated fadeInLeft">CHEATSHEET CSS</h1>
+            <div class="logo"><img class="animated jello img-reponsive" src="img/css3.jpg" alt="LogoCss3"></div>
+            <h3 class="animated fadeInLeft" id="item1">Les sélecteurs :</h3>
+            <ul class="command-list animated fadeInLeft">
+              <li>
+                <p>.class :</p>
+                <p>Permet de sélectionner un élement par rapport à sa classe</p>
+              </li>
+              <li>
+                <p>#id :</p>
+                <p>Permet de sélectionner un élement par rapport à sa classe</p>
+              </li>
+              <li>
+                <p>* :</p>
+                <p>Sélectionne tout les élements</p>
+              </li>
+              <li>
+                <p>div :</p>
+                <p>Sélectionne tous les élements de la div</p>
+              </li>
+              <li>
+                <p>div, p :</p>
+                <p>Sélectionne toutes les div et tous les p</p>
+              </li>
+              <li>
+                <p>div &gt; p :</p>
+                <p>Sélectionne tout les p qui sont imbriqués dans la div</p>
+              </li>
+              <li>
+                <p>div + p :</p>
+                <p>Sélectionne tout les élements p qui sont placés directement après la div</p>
+              </li>
+              <li>
+                <p>div ~ p :</p>
+                <p>Sélectionne tout les élements p après la div mentionnée</p>
+              </li>
+            </ul>
+          </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h3 class="animated fadeInLeft" id="item2">Les pseudo-classes</h3>
+
+              <ul class="command-list animated fadeInLeft">
+                <li>
+                  <p>a:link :</p>
+                  <p>Sélectionne tous les liens non visités</p>
+                </li>
+                <li>
+                  <p>a:visited :</p>
+                  <p>Sélectionne tous les liens qui ont été visités</p>
+                </li>
+                <li>
+                  <p>a:hover :</p>
+                  <p>Sélectionne les liens que le curseur de la souris survole</p>
+                </li>
+                <li>
+                  <p>p::before :</p>
+                  <p>Insère du contenu avant l'élément p</p>
+                </li>
+                <li>
+                  <p>p::after :</p>
+                  <p>Insère du contenu après l'élément p</p>
+                </li>
+                <li>
+                  <p>p:first-child :</p>
+                  <p>Sélectionne tous les éléments p qui sont les premiers du conteneur</p>
+                </li>
+                <li>
+                  <p>p:last-child :</p>
+                  <p>Sélectionne tous les éléments p qui sont les derniers du conteneur</p>
+                </li>
+                <li>
+                  <p>p:nth-child(X) :</p>
+                  <p>Sélectionne le Xième enfant du conteneur </p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- FIN DE #page-content-wrapper -->
+
+
+
+    <!-- SCRIPT DU MENU TOGGLE-->
+    <script>
+      $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+      });
+    </script>
+
+    <footer>
+      <div class="footer col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>© Cheatsheet CSS, TonbouyProd.</p>
+      </div>
+    </footer>
+
+</body>
+
+</html>
